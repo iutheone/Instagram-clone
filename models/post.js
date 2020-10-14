@@ -1,6 +1,6 @@
-const mongoose=require('mongoose');
-const {ObjectId}=mongoose.Schema.Types
-const postSchema=mongoose.Schema({
+const mongoose = require('mongoose')
+const {ObjectId} = mongoose.Schema.Types
+const postSchema = new mongoose.Schema({
     title:{
         type:String,
         required:true
@@ -19,8 +19,9 @@ const postSchema=mongoose.Schema({
         postedBy:{type:ObjectId,ref:"User"}
     }],
     postedBy:{
-        type:ObjectId,
-        ref:'User'
+       type:ObjectId,
+       ref:"User"
     }
-})
-mongoose.model("post",postSchema)
+},{timestamps:true})
+
+mongoose.model("Post",postSchema)
