@@ -7,7 +7,7 @@
     "start": "node App.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build client"
   },
-  "author": "",
+  "author": "Ayu dhawan",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

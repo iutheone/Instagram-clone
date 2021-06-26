@@ -21,6 +21,9 @@ const postSchema = new mongoose.Schema({
     postedBy:{
        type:ObjectId,
        ref:"User"
+    },
+    avatar:{
+        type:String
     }
 },{timestamps:true})
 

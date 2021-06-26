@@ -49,7 +49,7 @@ router.post('/signup',(req,res)=>{
                 res.json({message:"saved successfully"})
             })
             .catch(err=>{
-                console.log(err)
+                console.log(err);
             })
       })
      
