@@ -45,6 +45,8 @@ router.put('/follow',requireLogin,(req,res)=>{
     }
     )
 })
+
+
 router.put('/unfollow',requireLogin,(req,res)=>{
     User.findByIdAndUpdate(req.body.unfollowId,{
         $pull:{followers:req.user._id}
